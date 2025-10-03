@@ -1,6 +1,6 @@
 package mate.academy.model
 
 interface Figure {
-    fun getArea(): Double
+    fun calculateArea(): Double
     fun draw()
 }

@@ -1,6 +1,6 @@
 package mate.academy.model
 
-class Circle(val radius: Int = 10, color: Color = Color.WHITE) : AbstractFigure(color) {
+class Circle(val radius: Int, color: Color) : AbstractFigure(color) {
     override fun draw() {
         println("Figure: circle, area: ${calculateArea()} sq. units, radius: $radius units, color: ${color.code}")
     }
