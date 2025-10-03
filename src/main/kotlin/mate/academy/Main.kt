@@ -3,8 +3,10 @@ package mate.academy
 import mate.academy.service.ColorSupplier
 import mate.academy.service.FigureSupplier
 
+private const val MAX_NUMBER_OF_FIGURES = 6
+
 fun main() {
     val figureSupplier = FigureSupplier(ColorSupplier())
-    val figures = Array(4) { figureSupplier.getRandomFigure() }
+    val figures = Array(MAX_NUMBER_OF_FIGURES) { figureSupplier.getRandomFigure() }
     figures.forEach { figure -> figure.draw() }
 }
